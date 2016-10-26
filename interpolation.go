@@ -6,6 +6,7 @@ import (
 
 type MonotonicCubic func(x float64) float64
 
+// Adapted from https://en.wikipedia.org/w/index.php?title=Monotone_cubic_interpolation&oldid=720181378#Example_implementation
 func CreateMonotonicCubic(xs []float64 , ys []float64) MonotonicCubic {
   var i = len(xs)
   var length = i

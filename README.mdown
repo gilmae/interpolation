@@ -12,3 +12,5 @@ var interpolant = interpolation.CreateMonotonicCubic(xSequence, ySequence)
 for i:= 0; i < 1000; i++ {
   fmt.Printf("%s", interpolant(i/1000.0))  
 }
+
+Montonic Cubic Interpolation algorithm adapted from [Wikipedia example](https://en.wikipedia.org/w/index.php?title=Monotone_cubic_interpolation&oldid=720181378#Example_implementation)
