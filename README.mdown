@@ -3,14 +3,13 @@
 `import "github.com/gilmae/interpolation"`
 
 usage:
+```
+  var xSequence = []float64{0.0, .16, .42, .6425, .8675, 1}
+  var ySequence =  []float64{100.0, 203.0,255.0, 0.0, 0.0, 100.0}
+  var interpolant = interpolation.CreateMonotonicCubic(xSequence, ySequence)
 
-var xSequence = []float64{0.0, .16, .42, .6425, .8675, 1}
-var ySequence =  []float64{100.0, 203.0,255.0, 0.0, 0.0, 100.0}
-
-var interpolant = interpolation.CreateMonotonicCubic(xSequence, ySequence)
-
-for i:= 0; i < 1000; i++ {
-  fmt.Printf("%s", interpolant(i/1000.0))  
-}
-
+  for i:= 0; i < 1000; i++ {
+    fmt.Printf("%s", interpolant(i/1000.0))  
+  }
+```
 Montonic Cubic Interpolation algorithm adapted from [Wikipedia example](https://en.wikipedia.org/w/index.php?title=Monotone_cubic_interpolation&oldid=720181378#Example_implementation)
