@@ -3,7 +3,7 @@
 `import "github.com/gilmae/interpolation"`
 
 usage:
-```
+```go
   var xSequence = []float64{0.0, .16, .42, .6425, .8675, 1}
   var ySequence =  []float64{100.0, 203.0,255.0, 0.0, 0.0, 100.0}
   var interpolant = interpolation.CreateMonotonicCubic(xSequence, ySequence)
