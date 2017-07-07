@@ -15,7 +15,7 @@ func main() {
   var greenpoints =  []float64{7.0,107.0,255.0, 170.0, 2.0, 7.0}
   var bluepoints =  []float64{100.0, 203.0,255.0, 0.0, 0.0, 100.0}
 
-  var redSpline = interpolation.CreateMonotonicCubic(xSequence, redpoints)
+  var redInterpolant = interpolation.CreateMonotonicCubic(xSequence, redpoints)
   var greenInterpolant = interpolation.CreateMonotonicCubic(xSequence, greenpoints)
   var blueInterpolant = interpolation.CreateMonotonicCubic(xSequence, bluepoints)
 
